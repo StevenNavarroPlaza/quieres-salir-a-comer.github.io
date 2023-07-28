@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>♥ Quieres salir a comer conmigo ? ♥</title>
+    <style>
+        .body {
+            background-color: hotpink;
+            text-align: center;
+        }
+
+        .body__title {
+            color: white;
+        }
+
+        .body__img {
+            width: 100%;
+            max-width: 512px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">♥ Quieres salir a comer conmigo ? ♥</h1>
+    <img src="https://frikimaestro.com/wp-content/uploads/2019/10/0005-3.jpg" alt="Foto de yo" class="body__img" />
+    <br>
+    <button id="yes">🥰Si pofavo tengo hambre🥰</button>
+    <button id="no">😭Nel PerrO😭</button>
+
+    <script>
+        const vuttonSi = document.getElementById('yes');
+        const vuttonNo = document.getElementById('no');
+
+        const nuncaDude = () => {
+            alert('💞Te espero mañana sabado a tu salida o saliendo del psicologo, tu eliges💞');
+            alert('😱Tambien puede ser los 2 días😱 Solo ponme en wsp rep: 1 (sabado 29), rep: 2 (sabado 5), rep: 0 (ninguno :c)');
+            location.href = 'https://www.youtube.com/watch?v=jRMIdSCoHkQ';
+        };
+
+        const siempreDude = () => {
+            vuttonNo.style.position = 'absolute';
+            vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+            vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+        };
+
+        vuttonSi.addEventListener('click', nuncaDude);
+        vuttonNo.addEventListener('mouseover', siempreDude);
+    </script>
+</body>
+
+</html>
